@@ -2,18 +2,12 @@
 
 #titolo {
     text-align: center;
-    color: darkorange !important;
+    color: rgb(0, 38, 255);
 }
 .informazioni {
-    color: coral !important;
+    color: rgb(229, 255, 80);
 }
 body {
     font-family: 'Indie Flower';
-    background-color: beige !important;
-}
-p {
-    font-size: 20px;
-}
-p em {
-    font-size: 15px;
+    background-color: rgb(221, 245, 220);
 }
