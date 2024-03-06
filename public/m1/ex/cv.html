@@ -12,6 +12,9 @@
 <body>
     <h1 id="titolo">CV di Marco Grimaldi</h1>
     <h2 class="informazioni">Informazioni personali</h2>
+    <figure>
+        <img src="/m1/ex/img/flowercolor.jpg" width="20%" height="20%" alt="flower">
+    </figure>
     <p><strong>Nome:</strong> Marco</p>
     <p><strong>Cognome:</strong> Grimaldi</p>
     <p><strong>E-mail:</strong> grim.mar@gmail.com</p>
@@ -24,8 +27,73 @@
     <p><strong>Lingua Madre:</strong> Italiano</p>
     <p><strong>Altre lingue:</strong> Inglese - Business English</p>
     <h2 class="informazioni">Competenze informatiche</h2>
-    <p>Eccellenza in Java</p>
-    <p>Padronanza del Pacchetto Office..</p>
+    <table>
+        <caption>Competenze informatiche</caption>
+        <thead>
+            <tr>
+                <th scope="row">Tecnologia\Livello</th>
+                <th scope="col">Basso</th>
+                <th scope="col">Medio</th>
+                <th scope="col">Alto</th>
+            </tr>
+        </thead>
+        <tr>
+            <th scope="row">Java</th>
+            <td></td>
+            <td></td>
+            <td>x</td>
+        </tr>
+        <tr>
+            <th scope="row">SQL</th>
+            <td>x</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <th scope="row">Html</th>
+            <td></td>
+            <td>x</td>
+            <td></td>
+        </tr>
+    </table>
+    <div>
+        <h3 class="informazioni">Per chi volesse contattarmi inserisca questi dati:</h3>
+        <form action="/test">
+            <div>
+                <input name="nome" placeholder="Es. Mario"> <span>Nome</span>
+            </div>
+            <div>
+                <input name="cognome" placeholder="Es. Rossi"> <span>Cognome</span>
+            </div>
+            <div>
+                <input name="email" placeholder="Es. m***@***.com"> <span>E-mail</span>
+            </div>
+            <button>Invia</button>
+    </div>
+    <h3 class="informazioni">Offerta di lavoro</h3>
+    <div>
+        <input type="date" name="startDate"> <span>Data di inizio prevista</span>
+    </div>
+    <div>
+        <input type="date" name="startDate"> <span>Data di fine prevista</span>
+    </div>
+    <div>
+        <input type="number" name="salary" value="300"> <span>Salario giornaliero</span>
+    </div>
+    <div>
+        <h4 class="informazioni"> Ruoli lavorativi</h4>
+        <div>
+            <div><label><input type="radio" name="ruoli" value="Sviluppatore backend">Sviluppatore backend</label></div>
+            <div><label><input type="radio" name="ruoli" value="Programmatore frontend">Sviluppatore frontend</label></div>
+        </div>
+    </div>
+    <div>
+        <h4 class="informazioni">Benefit aggiuntivi</h4>
+        <label><input type="checkbox" name="benefit" value="Telefono aziendale">Telefono aziendale</label>
+        <label><input type="checkbox" name="benefit" value="PC aziendale">PC aziendale </label>
+        <label><input type="checkbox" name="benefit" value="Ticket buonipasto">Tichet buonipasto</label>
+    </div>
+    </form>
 </body>
 
 </html>
